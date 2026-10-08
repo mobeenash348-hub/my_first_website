@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="fa" dir="rtl">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>آرتان لجستیک | حمل و انبارداری</title>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Vazirmatn:wght@300;400;600;800&display=swap">
+<style>
+:root{--bg:#f4f7f8;--surface:#fff;--ink:#10263a;--muted:#55697a;--teal:#1f6f78;--accent:#f5b700;--line:#d3dde2;--hero:#10263a;--hero-ink:#fff;
+box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]){--bg:#0b1822;--surface:#122535;--ink:#e8eff3;--muted:#98acba;--teal:#5fb3bc;--line:#24394a;--hero:#0e2132}}
+:root[data-theme="dark"]{--bg:#0b1822;--surface:#122535;--ink:#e8eff3;--muted:#98acba;--teal:#5fb3bc;--line:#24394a;--hero:#0e2132}
+html{scroll-padding-top:env(safe-area-inset-top,0px)}
+*{box-sizing:border-box}
+body{margin:0;background:var(--bg);color:var(--ink);font-family:"Vazirmatn",Tahoma,sans-serif;line-height:1.9}
+a{color:inherit}
+:focus-visible{outline:3px solid var(--accent);outline-offset:2px}
+.wrap{max-width:1080px;margin:0 auto;padding:0 20px}
+header{background:var(--hero);color:var(--hero-ink)}
+.bar{display:flex;align-items:center;justify-content:space-between;gap:16px;padding:14px 0;flex-wrap:wrap}
+.logo{font-weight:800;font-size:1.25rem;text-decoration:none;display:flex;align-items:center;gap:10px}
+.logo i{width:14px;height:14px;background:var(--accent);display:inline-block;transform:rotate(45deg)}
+nav{display:flex;gap:4px;flex-wrap:wrap}
+nav a{padding:6px 14px;text-decoration:none;border-bottom:3px solid transparent;font-weight:400}
+nav a[aria-current="page"]{border-color:var(--accent);font-weight:600}
+nav a:hover{border-color:var(--teal)}
+.page{display:none}.page.on{display:block}
+.hero{background:var(--hero);color:var(--hero-ink);padding:48px 0 64px;overflow:hidden}
+.hero .wrap{display:grid;grid-template-columns:1.1fr 1fr;gap:32px;align-items:center}
+h1{font-size:clamp(2rem,5vw,3.4rem);line-height:1.35;margin:0 0 16px;font-weight:800}
+h2{font-size:1.7rem;margin:0 0 12px;font-weight:800;line-height:1.5}
+h3{margin:0 0 6px;font-size:1.1rem}
+.hero p{color:#c5d3dd;max-width:34em;margin:0 0 24px}
+.btn{display:inline-block;background:var(--accent);color:#10263a;padding:10px 26px;font-weight:600;text-decoration:none;border:0;font:inherit;font-weight:600;cursor:pointer;border-radius:4px}
+.btn.alt{background:transparent;color:inherit;border:2px solid currentColor;margin-inline-start:10px}
+.route path.l{fill:none;stroke:var(--accent);stroke-width:3;stroke-dasharray:6 8;stroke-linecap:round}
+.route .p{fill:var(--hero);stroke:#fff;stroke-width:3}
+.route text{fill:#fff;font-size:15px;font-family:inherit}
+@media (prefers-reduced-motion:no-preference){.route path.l{stroke-dasharray:1200;stroke-dashoffset:1200;animation:d 2.6s ease-out .3s forwards}@keyframes d{to{stroke-dashoffset:0}}}
+section.s{padding:48px 0}
+.stats{display:flex;flex-wrap:wrap;gap:0;border:1px solid var(--line);background:var(--surface)}
+.stats div{flex:1 1 180px;padding:20px 24px;border-inline-end:1px solid var(--line)}
+.stats b{display:block;font-size:1.8rem;color:var(--teal)}
+.stats span{color:var(--muted);font-size:.95rem}
+.cols{display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:28px}
+.svc{border-top:4px solid var(--teal);padding-top:14px}
+.svc p,.muted{color:var(--muted);margin:0}
+.split{display:grid;grid-template-columns:1fr 1fr;gap:40px}
+.tl{border-inline-start:3px solid var(--teal);padding-inline-start:20px}
+.tl div{margin-bottom:18px}.tl b{color:var(--teal)}
+.team{display:grid;grid-template-columns:repeat(auto-fit,minmax(200px,1fr));gap:20px}
+.team div{background:var(--surface);border:1px solid var(--line);padding:16px}
+.team small{color:var(--muted)}
+.tbl{overflow-x:auto}
+table{border-collapse:collapse;width:100%;min-width:520px;background:var(--surface)}
+th,td{text-align:right;padding:12px 16px;border-bottom:1px solid var(--line)}
+th{background:var(--hero);color:#fff;font-weight:600}
+label{display:block;font-weight:600;margin:14px 0 4px}
+input,textarea,select{width:100%;padding:10px 12px;font:inherit;background:var(--surface);color:var(--ink);border:1px solid var(--line);border-radius:4px}
+.ok{display:none;margin-top:14px;padding:12px 16px;border-inline-start:4px solid var(--teal);background:var(--surface)}
+.cta{background:var(--teal);color:#fff;padding:36px 0}
+.cta .wrap{display:flex;justify-content:space-between;align-items:center;gap:16px;flex-wrap:wrap}
+.cta h2{margin:0}
+footer{background:var(--hero);color:#b4c4d0;padding:24px 0;font-size:.9rem}
+footer .wrap{display:flex;justify-content:space-between;gap:12px;flex-wrap:wrap}
+.pagehead{background:var(--hero);color:#fff;padding:36px 0 44px}
+.pagehead h1{font-size:clamp(1.8rem,4vw,2.6rem);margin:0}
+.pagehead p{margin:6px 0 0;color:#c5d3dd}
+@media(max-width:760px){.hero .wrap,.split{grid-template-columns:1fr}}
+</style>
+</head>
+<body>
+<header>
+  <div class="wrap bar">
+    <a class="logo" href="#home"><i></i>آرتان لجستیک</a>
+    <nav aria-label="منوی اصلی">
+      <a href="#home">خانه</a><a href="#about">درباره ما</a><a href="#services">خدمات</a><a href="#contact">تماس</a>
+    </nav>
+  </div>
+</header>
+
+<main>
+<!-- خانه -->
+<div class="page" id="p-home">
+  <div class="hero"><div class="wrap">
+    <div>
+      <h1>بار شما، از درِ انبار تا مقصد، زیر نظر ماست</h1>
+      <p>حمل جاده‌ای، دریایی و ریلی و انبارداری هوشمند برای شرکت‌های تولیدی و بازرگانی. در هر مرحله می‌دانید بار کجاست.</p>
+      <a class="btn" href="#contact">درخواست قیمت</a><a class="btn alt" href="#services">خدمات ما</a>
+    </div>
+    <svg class="route" viewBox="0 0 420 300" role="img" aria-label="مسیر حمل از تهران به باکو و استانبول">
+      <path class="l" d="M60 230 C 140 200, 150 120, 230 110 S 340 60, 370 50"/>
+      <path class="l" d="M230 110 C 260 170, 300 200, 360 235"/>
+      <circle class="p" cx="60" cy="230" r="9"/><circle class="p" cx="230" cy="110" r="9"/><circle class="p" cx="370" cy="50" r="9"/><circle class="p" cx="360" cy="235" r="9"/>
+      <text x="60" y="262" text-anchor="middle">بندر انزلی</text>
+      <text x="230" y="90" text-anchor="middle">باکو</text>
+      <text x="370" y="30" text-anchor="middle">استانبول</text>
+      <text x="360" y="268" text-anchor="middle">دبی</text>
+    </svg>
+  </div></div>
+  <section class="s"><div class="wrap">
+    <div class="stats">
+      <div><b>۱۵ سال</b><span>سابقه در حمل بین‌المللی</span></div>
+      <div><b>۱۲٬۰۰۰</b><span>محموله تحویل‌شده در سال</span></div>
+      <div><b>۲۴ کشور</b><span>مسیرهای فعال</span></div>
+      <div><b>۹۸٪</b><span>تحویل در زمان تعهدشده</span></div>
+    </div>
+  </div></section>
+  <section class="s" style="padding-top:0"><div class="wrap">
+    <h2>کارهایی که برای شما انجام می‌دهیم</h2>
+    <div class="cols">
+      <div class="svc"><h3>حمل بین‌المللی</h3><p>جاده، دریا و ریل با یک قرارداد و یک مسئول پیگیری.</p></div>
+      <div class="svc"><h3>انبارداری</h3><p>۴۵٬۰۰۰ متر انبار مجهز به سیستم موجودی لحظه‌ای.</p></div>
+      <div class="svc"><h3>ترخیص کالا</h3><p>تهیه اسناد و ترخیص گمرکی بدون معطلی.</p></div>
+    </div>
+  </div></section>
+  <div class="cta"><div class="wrap"><h2>محموله بعدی‌تان را به ما بسپارید</h2><a class="btn" href="#contact">تماس با ما</a></div></div>
+</div>
+
+<!-- درباره ما -->
+<div class="page" id="p-about">
+  <div class="pagehead"><div class="wrap"><h1>درباره ما</h1><p>یک شرکت حمل‌ونقل که قولش را با زمان‌بندی نشان می‌دهد.</p></div></div>
+  <section class="s"><div class="wrap split">
+    <div>
+      <h2>ما که هستیم</h2>
+      <p class="muted">آرتان لجستیک در سال ۱۳۸۹ با سه کامیون و یک انبار کوچک شروع کرد. امروز ناوگان و شبکه‌ای داریم که کالا را بین ایران، قفقاز، ترکیه و خلیج فارس جابه‌جا می‌کند. اصل کار ما ساده است: قیمت شفاف، زمان واقعی، و پاسخ‌گویی در همان روز.</p>
+    </div>
+    <div class="tl">
+      <div><b>۱۳۸۹</b><br>تأسیس و شروع حمل جاده‌ای</div>
+      <div><b>۱۳۹۴</b><br>راه‌اندازی انبار مرکزی</div>
+      <div><b>۱۳۹۹</b><br>گسترش مسیرهای دریایی و ریلی</div>
+      <div><b>۱۴۰۴</b><br>سامانه رهگیری آنلاین بار</div>
+    </div>
+  </div></section>
+  <section class="s" style="padding-top:0"><div class="wrap">
+    <h2>تیم مدیریت</h2>
+    <div class="team">
+      <div><b>مریم کاویانی</b><br><small>مدیرعامل</small></div>
+      <div><b>علی رضایی</b><br><small>مدیر عملیات</small></div>
+      <div><b>سارا نوری</b><br><small>مدیر بازرگانی</small></div>
+    </div>
+  </div></section>
+</div>
+
+<!-- خدمات -->
+<div class="page" id="p-services">
+  <div class="pagehead"><div class="wrap"><h1>خدمات</h1><p>هر روش حمل برای نوع بار و بودجه‌ای مناسب است.</p></div></div>
+  <section class="s"><div class="wrap">
+    <div class="tbl"><table>
+      <thead><tr><th>خدمت</th><th>مناسب برای</th><th>زمان معمول</th></tr></thead>
+      <tbody>
+        <tr><td>حمل جاده‌ای</td><td>بار کامل و نیم‌بار، مسیرهای منطقه‌ای</td><td>۲ تا ۶ روز</td></tr>
+        <tr><td>حمل دریایی</td><td>کانتینر ۲۰ و ۴۰ فوت، بار سنگین</td><td>۷ تا ۲۱ روز</td></tr>
+        <tr><td>حمل ریلی</td><td>بار فله و کالای صنعتی</td><td>۵ تا ۱۲ روز</td></tr>
+        <tr><td>انبارداری</td><td>نگهداری کوتاه و بلندمدت، بسته‌بندی مجدد</td><td>قرارداد ماهانه</td></tr>
+        <tr><td>ترخیص گمرکی</td><td>واردات و صادرات</td><td>۱ تا ۳ روز کاری</td></tr>
+      </tbody>
+    </table></div>
+  </div></section>
+  <section class="s" style="padding-top:0"><div class="wrap cols">
+    <div class="svc"><h3>رهگیری آنلاین</h3><p>وضعیت هر محموله را از ثبت تا تحویل ببینید.</p></div>
+    <div class="svc"><h3>بیمه بار</h3><p>پوشش خسارت برای تمام مسیرها.</p></div>
+    <div class="svc"><h3>مشاوره مسیر</h3><p>کم‌هزینه‌ترین و سریع‌ترین گزینه را با هم مقایسه می‌کنیم.</p></div>
+  </div></section>
+</div>
+
+<!-- تماس -->
+<div class="page" id="p-contact">
+  <div class="pagehead"><div class="wrap"><h1>تماس با ما</h1><p>مشخصات بار را بفرستید؛ تا پایان همان روز کاری قیمت می‌گیرید.</p></div></div>
+  <section class="s"><div class="wrap split">
+    <form id="f" novalidate>
+      <label for="n">نام و شرکت</label><input id="n" required autocomplete="name">
+      <label for="e">ایمیل یا تلفن</label><input id="e" required autocomplete="email">
+      <label for="t">نوع خدمت</label>
+      <select id="t"><option>حمل جاده‌ای</option><option>حمل دریایی</option><option>حمل ریلی</option><option>انبارداری</option><option>ترخیص گمرکی</option></select>
+      <label for="m">توضیح بار و مسیر</label><textarea id="m" rows="4"></textarea>
+      <p style="margin-top:16px"><button class="btn" type="submit">ارسال درخواست قیمت</button></p>
+      <div class="ok" id="ok" role="status">درخواست ثبت شد. به‌زودی با شما تماس می‌گیریم.</div>
+    </form>
+    <div>
+      <h2>دفتر مرکزی</h2>
+      <p class="muted">تهران، خیابان ولیعصر، پلاک ۱۲۰<br>شنبه تا چهارشنبه، ۸ تا ۱۷</p>
+      <h3 style="margin-top:20px">تلفن</h3><p class="muted" dir="ltr" style="text-align:right">+98 21 0000 0000</p>
+      <h3 style="margin-top:20px">ایمیل</h3><p class="muted" dir="ltr" style="text-align:right">info@artan-logistics.example</p>
+    </div>
+  </div></section>
+</div>
+</main>
+
+<footer><div class="wrap"><span>© آرتان لجستیک</span><span>حمل، انبارداری و ترخیص</span></div></footer>
+
+<script>
+(function(){
+  var pages=["home","about","services","contact"];
+  function go(){
+    var h=(location.hash||"#home").slice(1); if(pages.indexOf(h)<0)h="home";
+    pages.forEach(function(p){document.getElementById("p-"+p).classList.toggle("on",p===h)});
+    document.querySelectorAll("nav a").forEach(function(a){
+      if(a.getAttribute("href")==="#"+h)a.setAttribute("aria-current","page");else a.removeAttribute("aria-current");
+    });
+    window.scrollTo(0,0);
+  }
+  window.addEventListener("hashchange",go);go();
+  document.getElementById("f").addEventListener("submit",function(ev){
+    ev.preventDefault();
+    var ok=document.getElementById("ok");
+    if(!document.getElementById("n").value.trim()||!document.getElementById("e").value.trim()){
+      ok.textContent="نام و راه تماس را وارد کنید.";
+    }else{ok.textContent="درخواست ثبت شد. به‌زودی با شما تماس می‌گیریم.";}
+    ok.style.display="block";
+  });
+})();
+</script>
+</body>
+</html>
